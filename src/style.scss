@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  font-size: 1.4rem;
+  color: white;
+  background-color: $bgColor;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+ol,
+ul,
+li,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+#app {
+  height: 100%;
+}
+
+// Form样式
+.van-form {
+  .van-cell-group {
+    background-color: transparent;
+    border-radius: 0;
+    .van-cell {
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 1.5rem;
+      border-radius: 1.2rem;
+
+      &:first-child {
+        margin-bottom: 1rem;
+        &::after {
+          display: none;
+        }
+      }
+
+      .van-field__left-icon {
+        margin-right: 1rem;
+        .van-icon {
+          &::before {
+            color: white;
+            font-size: 2rem;
+          }
+        }
+      }
+
+      .van-field__label {
+      }
+
+      .van-cell__value {
+        .van-field__body {
+          .van-field__control {
+            color: white;
+            &::-webkit-input-placeholder {
+              color: #626789;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// NavBar样式
+.van-nav-bar {
+  background: $bgColor !important;
+
+  &::after {
+    border: none !important;
+  }
+  .van-nav-bar__content {
+    .van-nav-bar__title {
+      color: white;
+    }
+    .van-icon {
+      color: white;
+      font-size: 2rem;
+    }
+  }
+}
+
+// Popup样式
+.van-popup {
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  background: transparent !important;
+}
+
+// Picker样式
+.van-picker {
+  background-color: $bgColorSub !important;
+  padding-bottom: 2rem;
+  .van-picker__toolbar {
+    height: auto;
+    margin-bottom: 2rem;
+    button {
+      color: white;
+      font-size: 1.8rem;
+      padding: 1.4rem 2rem;
+    }
+  }
+  .van-picker__columns {
+    background: transparent;
+    .van-picker-column {
+      .van-picker-column__wrapper {
+        .van-picker-column__item {
+          color: #999;
+          font-size: 1.8rem;
+          font-weight: bold;
+          &.van-picker-column__item--selected {
+            color: #6368fa;
+          }
+        }
+      }
+    }
+    .van-picker__mask {
+      background: transparent;
+    }
+    .van-picker__frame {
+      // background: #3b3d47;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 1.2rem;
+      left: 2rem;
+      right: 2rem;
+      &::after {
+        border: none;
+      }
+    }
+  }
+}

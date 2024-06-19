@@ -1,0 +1,22 @@
+.carousel {
+  background-color: black;
+  margin-top: 0.4rem;
+  overflow: hidden;
+  position: relative;
+  padding: 0.5rem;
+  width: 100%;
+  margin-bottom: 2rem;
+  ul {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    li {
+      background-color: rgba(255, 255, 255, 0.1);
+      // border: 1px solid red;
+      padding: 0.8rem 1rem;
+      border-radius: 2rem;
+      margin-right: 0.5rem;
+      white-space: nowrap;
+    }
+  }
+}
