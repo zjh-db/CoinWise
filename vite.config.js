@@ -3,7 +3,8 @@ import vue from "@vitejs/plugin-vue";
 import { fileURLToPath } from "url";
 
 // https://vitejs.dev/config/
-export default defineConfig({
+export default ({
+  base: '/CoinWise/',
   plugins: [vue()],
   resolve: {
     alias: {
