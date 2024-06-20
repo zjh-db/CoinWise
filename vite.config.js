@@ -4,7 +4,7 @@ import { fileURLToPath } from "url";
 
 // https://vitejs.dev/config/      base: '/CoinWise/',
 export default defineConfig({
-  base: './',
+  base: 'zjh-db.github.io/CoinWise/',
   plugins: [vue()],
   resolve: {
     alias: {
